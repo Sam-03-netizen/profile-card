@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 550px;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            border-radius: 16px;
+            box-shadow: 0 0 10px rgb(103, 103, 243);
+            display: flex;
+            margin: auto;
+
+        }
+
+        img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 5px;
+            box-shadow: 0 0 10px rgb(134, 134, 241);
+        }
+
+        .intro p {
+            padding: 2px;
+            color: #a1a0a0;
+            text-align: left;
+            padding: 5px;
+            margin-top: 40px;
+        }
+
+        .photo h2 {
+            font-size: 1.5 rem;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .intro button {
+            border-radius: 7px;
+            margin: 10px;
+            background-color: lightskyblue;
+            height: 35px;
+
+        }
+
+        button:hover {
+            background-color: blue;
+            transition: 0.3s ease;
+            color: aliceblue;
+        }
+
+        @media(max-width:640px) {
+            .card {
+                width: 70vw;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            img {
+                margin: 0 auto 15px auto;
+                width: 120px;
+                height: 120px;
+            }
+
+            button {
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="photo">
+            <img src="https://i.pinimg.com/originals/15/c1/ec/15c1ec0f3beb08c3587d65462fd0fc7a.jpg">
+            <h2>Samriddhi Bhowmik🩵</h2>
+        </div>
+        <div class="intro">
+            <p>Web designer & javascript enthusiast. Loved clean, creative layouts and good coffee🍵!</p>
+            <button>Contact</button>
+            <button>Portfolio</button>
+        </div>
+    </div>
+</body>
+
+</html>
